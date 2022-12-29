@@ -13,6 +13,7 @@ int main() {
         int j = 1, k = n;
         while(k > i+1) {
             printf(" ");
+            k---;
         }
         while(j <= i) {
             printf("%d", i);
