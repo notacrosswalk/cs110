@@ -8,7 +8,8 @@
 #include <stdio.h>
 
 int main() {
-    int i = 4;
+    int n = 4; // Change the input here
+    int i = n;
     while(i > 0) {
         int j = i, k = 4 - i;
         while(k > 0) {

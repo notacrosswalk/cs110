@@ -8,8 +8,9 @@
 #include <stdio.h>
 
 int main() {
+    int n = 4; // Change the input here
     int i = 0;
-    while(i < 4) {
+    while(i < n) {
         int j = 0, k = 3 - i;
         while(k > 0) {
             printf(" ");
