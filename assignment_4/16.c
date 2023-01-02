@@ -9,7 +9,7 @@ int main() {
     printf("The prime numbers less than %d are ", n);
     for(int i = 2; i < n; i++) {
         int condition = 1;
-        for(int j = i - 1; j >= sqrt(i); j--) {
+        for(int j = 2; j <= sqrt(i); j++) {
             if(i%j == 0) {
                 condition = 0;
                 break;
