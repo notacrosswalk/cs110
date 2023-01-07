@@ -11,7 +11,7 @@ int main() {
   
   float diameter = 2.0;
   
-  float a = area(2.0);
+  float a = area(diameter);
   
   printf("Area of the circle with diameter %f is %f.\n", diameter, a);
   
