@@ -1,11 +1,11 @@
-/* Write a function in C to compute the area of a circle. You must pass the circle’s
-diameter as a parameter to the function. Write the main function and call it from the
-main function. You need to define the function before the main function. */
+/* Write a function in C to compute the area of a circle. You must pass the 
+circle’s diameter as a parameter to the function. Write the main function and
+call it from the main function. You need to define the function before the main function. */
 
 #include <math.h>
 #include <stdio.h>
 
-float area(float d);
+float area(float d); // Prototype declaration
 
 int main() {
   
