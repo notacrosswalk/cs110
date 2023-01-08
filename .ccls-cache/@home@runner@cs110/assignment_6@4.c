@@ -9,9 +9,9 @@ void primeInRange(int a, int b);
 
 int main() {
 
-	int x = 90, y = 100; // Change the inputs here
+	int x = 0, y = 100; // Change the inputs here
 
-  primeInRange(x, y);
+  	primeInRange(x, y);
   
 	return 0;
 }
