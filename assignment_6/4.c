@@ -11,7 +11,7 @@ int main() {
 
 	int x = 0, y = 100; // Change the inputs here
 
-  primeInRange(x, y);
+  	primeInRange(x, y);
   
 	return 0;
 }
