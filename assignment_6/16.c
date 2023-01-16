@@ -3,10 +3,12 @@ x is a real value, and n is a positive integer.*/
 
 #include <stdio.h>
 
-float power(float x, int n) 
+// To be verified
+
+double power(double x, int n) 
 {
     if(n == 0) return 1.0;
-    double y = f(x, n / 2);
+    double y = power(x, n / 2);
     if (n % 2) return x * y * y;
     return y * y;
 }
@@ -15,6 +17,6 @@ int main()
 {
     double a = 6;
     int b = 3; // Change the inputs here
-    printf("%d^%d = %d", a, b, power(a, b));
+    printf("%lf^%d = %lf\n", a, b, power(a, b));
     return 0;
 }
