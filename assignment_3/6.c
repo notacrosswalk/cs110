@@ -2,7 +2,7 @@
    Do not use the ?: operator.*/
 #include <stdio.h>
 int main() {
-    int a = 1, b = 2, max = 0;
+    float a = 1.0, b = 2.0;
     if (a > b) {
         printf("%d is the maximum of the two numbers. \n", a);
     }

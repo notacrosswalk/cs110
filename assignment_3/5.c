@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 int main() {
-    int n = 3;
+    float n = 3;
     if (n > 0) {
         printf("%d is positive. \n", n);
     }
