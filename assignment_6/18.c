@@ -1,5 +1,5 @@
 /* Write a recursive function in C to find the sum 
-of all even numbers in a given range. */
+of all odd numbers in a given range. */
 
 #include <stdio.h>
 
