@@ -1,5 +1,5 @@
-/* Write a function in C that takes a positive integer n as an argument and returns the
-smallest power of two that is greater than or equal to n. */
+/* Write a function in C that takes a positive integer n as an argument 
+and returns the smallest power of two that is greater than or equal to n. */
 
 #include <stdio.h>
 #include <math.h>
