@@ -1,2 +1,2 @@
 # Computer Programming Lab (CS110)
-B. Tech First Year Monsoon Semester 2022
+This is my repository containing resources and C programs for the Computer Programming Lab (CS110) Course (B. Tech First Year 2022-2023 Monsoon Semester).
