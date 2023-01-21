@@ -53,3 +53,5 @@ dkms.conf
 
 #Replit 
 .ccls-cache/
+.replit
+replit.nix
