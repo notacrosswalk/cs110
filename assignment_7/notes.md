@@ -1,4 +1,6 @@
 # Notes
+- malloc() allocates a memory block of given size (in bytes) and returns a pointer to the beginning of the block. malloc() doesn’t initialize the allocated memory.
+- calloc() allocates the memory and also initializes every byte in the allocated memory to 0.
 - The return type of calloc is void *
 - Type casting
 ```
