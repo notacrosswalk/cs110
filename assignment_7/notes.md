@@ -14,3 +14,7 @@ a[i];
 *(a+i);
 i[a];
 ```
+
+# Further reading
+https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
+https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/
