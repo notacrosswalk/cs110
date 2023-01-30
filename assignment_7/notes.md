@@ -16,5 +16,5 @@ i[a];
 ```
 
 # Further reading
-https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
-https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/
+- https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
+- https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/
