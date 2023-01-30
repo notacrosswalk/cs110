@@ -6,3 +6,9 @@
 
 // char *c = (char *) p; // This is valid
 ```
+- The following are equivalent
+```
+a[i];
+*(a+i);
+i[a];
+```
