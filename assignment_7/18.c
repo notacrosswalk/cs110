@@ -21,9 +21,9 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-    // Calling the multiply function
+    // Calling the transpose function
     int **result = transpose(a, m, n);
-    // Printing the multiplied matrix
+    // Printing the transposed matrix
     printf("\nThe transpose of the matrix is:\n");
     for(int i=0; i<m; i++)
     {
