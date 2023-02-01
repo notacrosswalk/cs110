@@ -1,6 +1,7 @@
 // Write a program in C to read n int values in an array and display it in reverse order.
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void reversedArray(int *arr, int size) 
 {
@@ -14,10 +15,7 @@ int main() {
     int size;
     scanf("%d", &size);
     printf("Enter the elements of the array:\n");
-    // int *p = (int *) calloc(n, sizeof(int));
-    
-    // char *c = (char *) p; // This is valid
-    int arr[size];
+    int *arr = (int *) calloc(size, sizeof(int));
     for(int i=0; i<size; i++) 
     {
         scanf("%d", &arr[i]);

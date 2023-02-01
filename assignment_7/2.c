@@ -1,6 +1,7 @@
 // Write a function in C to find the sum of all array elements.
 
 #include <stdio.h>
+#include <stdlib.h>
 
 double sumOfArrayElements(double *arr, int size) 
 {
@@ -15,7 +16,7 @@ int main() {
     int size;
     scanf("%d", &size);
     printf("Enter the elements of the array:\n");
-    double arr[size];
+    double *arr = (double *) malloc(size*sizeof(double));
     for(int i=0; i<size; i++) 
     {
         scanf("%lf", &arr[i]);
