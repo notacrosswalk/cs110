@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *merge(int *a1, int *a2, int n);
+int *merge(int *a1, int *a2, int size);
 
 int main() 
 {
@@ -17,13 +17,13 @@ int main()
     return 0;
 }
 
-int *merge(int *a1, int *a2, int n)
+int *merge(int *a1, int *a2, int size)
 {
-    int *result = (int *) malloc(2*n*sizeof(int));
+    int *result = (int *) malloc(2*size*sizeof(int));
     int i1 = 0, i2 = 0; // Indices
-    for(int i=0; i<(2*n); i++)
+    for(int i=0; i<(2*size); i++)
     {
-        if(i1 < n &&  i2 < n)
+        if(i1 < size &&  i2 < size)
         {
             if(a1[i1] >= a2[i2])
             {
@@ -36,12 +36,12 @@ int *merge(int *a1, int *a2, int n)
                 i2++;
             }    
         }
-        else if(i1 >= n)
+        else if(i1 >= size)
         {
             result[i] = a2[i2];
             i2++;
         }
-        else if(i2 >= n)
+        else if(i2 >= size)
         {
             result[i] = a1[i1];
             i1++;
