@@ -36,4 +36,6 @@ void findSubarrays(int *arr, int size, int sum) {
       }
     }
   }
+    free(arr);
+    arr = NULL;
 }

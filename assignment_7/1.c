@@ -8,6 +8,8 @@ void reversedArray(int *arr, int size)
     printf("The array in reverse order:\n");
     for(int i=size-1; i>-1; i--)
         printf("%d\n", arr[i]);
+    free(arr);
+    arr = NULL;
 }
 
 int main() {

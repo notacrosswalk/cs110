@@ -16,9 +16,14 @@ void printUnique(int *arr, int size) {
             printf("%d\n", arr[i]);
         }
       }
-        if(!c) printf("%d\n", arr[i]);
+      if (!c)
+        printf("%d\n", arr[i]);
     }
   }
+  free(arr);
+  arr = NULL;
+  free(flag);
+  flag = NULL;
 }
 
 int main() {

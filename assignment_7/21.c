@@ -18,6 +18,8 @@ int main() {
   printf("Enter the required sum.\n");
   scanf("%d", &sum);
   findPair(arr, size, sum);
+  free(arr);
+  arr = NULL;
   return 0;
 }
 

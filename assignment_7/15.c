@@ -41,6 +41,12 @@ int main()
             printf("%d\t", result[i][j]);
         printf("\n");
     }
+    free(a);
+    free(b);
+    free(result);
+    a = NULL;
+    b = NULL;
+    result = NULL;
     return 0;
 }
 

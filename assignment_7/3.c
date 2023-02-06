@@ -26,5 +26,7 @@ int main() {
     }
     double min = minimumInArray(arr, size);
     printf("Minimum element in the array: %lf\n", min);
+    free(arr);
+    arr = NULL;
     return 0;
 }

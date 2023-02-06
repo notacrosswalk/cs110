@@ -8,6 +8,8 @@ double sumOfArrayElements(double *arr, int size)
     double sum = 0;
     for(int i=0; i<size; i++)
         sum += arr[i];
+    free(arr);
+    arr = NULL;    
     return sum;
 }
 

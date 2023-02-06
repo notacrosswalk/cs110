@@ -14,11 +14,16 @@ int numberOfDuplicates(int *arr, int size) {
         if (arr[i] == arr[j] && !flag[j]) {
           flag[j] = 1;
           flag[i] = flag[j];
-          if (c++ == 0) n++;
+          if (c++ == 0)
+            n++;
         }
       }
     }
   }
+  free(arr);
+  arr = NULL;
+  free(flag);
+  flag = NULL;
   return n;
 }
 

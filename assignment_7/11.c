@@ -22,6 +22,10 @@ int main() {
   printf("\nThe array after the element has been deleted is:\n");
   for (int i = 0; i < size - 1; i++)
     printf("%d\n", narr[i]);
+  free(arr);
+  free(narr);
+  arr = NULL;
+  narr = NULL;
   return 0;
 }
 

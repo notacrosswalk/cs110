@@ -23,5 +23,7 @@ int oddOccurrences(int *arr, int size) {
     if (arr[i] % 2)
       n++;
   }
+  free(arr);
+  arr = NULL;
   return n;
 }

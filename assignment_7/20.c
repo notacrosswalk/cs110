@@ -26,6 +26,8 @@ int main()
         printf("It is an identity matrix of order %d.\n", n);
     else
         printf("It is not an identity matrix.\n");
+    free(a);
+    a = NULL;
     return 0;
 }
 
