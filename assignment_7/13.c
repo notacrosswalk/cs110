@@ -8,10 +8,10 @@ int *addAndSort(int *arr, int size, int element);
 
 int main() {
   int size;
-  printf("Enter the size of the integer array.\n");
+  printf("Enter the size of the integer array sorted in increasing order.\n");
   scanf("%d", &size);
   int *arr = (int *)malloc(size * sizeof(int));
-  printf("Enter the elements of the integer array.\n");
+  printf("Enter the elements of the sorted integer array.\n");
   for (int i = 0; i < size; i++)
     scanf("%d", &arr[i]);
   int element;
