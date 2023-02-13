@@ -31,4 +31,5 @@ int main()
     else printf("\n%d appears more than n/2 times in the array.\n", x);
     free(arr);
     arr = NULL;
+    return 0;
 }
