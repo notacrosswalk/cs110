@@ -21,6 +21,8 @@ int main() {
     printf("\n%d has been found at index %d in the array.\n", query, index);
   else
     printf("\n%d has not been found in the array.\n", query);
+  free(arr);
+  arr = NULL;
   return 0;
 }
 
