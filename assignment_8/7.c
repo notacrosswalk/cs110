@@ -38,3 +38,36 @@ int main()
     printf("%d\n", max_sum(a, n));
     return 0;
 }
+
+
+/* Kadane's Algorithm
+
+int current_sum = 0;
+int max_sum = INT_MIN;
+int reset = -1;
+for(int i=0; i<n; i++)
+{
+    current_sum += a[i];
+    if(current_sum > max_sum) max_sum = current_sum;
+    if(current_sum < 0) 
+    {    
+        current_sum = 0;
+        reset = i;
+    }
+}
+if(reset != -1)
+{
+    for(int i=0; i<=reset; i++)
+    {
+        current_sum += a[i];
+        if(current_sum > max_sum) max_sum = current_sum;
+        if(current_sum < 0)
+        {
+            current_sum = 0;
+            break;
+        }    
+    }   
+}
+
+return max_sum;
+*/
