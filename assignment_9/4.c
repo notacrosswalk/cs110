@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// fflush(stdin) does not work with GCC on the institute server somehow.
+// It works with GCC on Code::Blocks for Windows though.
+
 int main()
 {
     printf("Enter the size of the int array.\n");
