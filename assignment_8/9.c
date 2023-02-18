@@ -7,7 +7,7 @@ void permutate(int a[], int size)
 {
     for(int i=0; i<size-1; i++)
     {
-        int j = rand()/(size-i);
+        int j = rand()%(size-i);
         swap(a, i, j);
     }
 }
