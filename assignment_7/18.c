@@ -1,3 +1,4 @@
+
 // Write a function in C to find the transpose of a given matrix.
 
 #include <stdio.h>
@@ -50,4 +51,17 @@ int **transpose(int **a, int m, int n)
         }
     }
     return result;
+}
+
+
+/* More efficient way, for a square matrix:
+
+for(int i=0; i<n; i++)
+{
+    for(int j=i; j<n; j++)
+    {
+        int temp = a[i][j];
+        a[i][j] = a[j][i];
+        a[j][i] = temp;
+    }
 }
