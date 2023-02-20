@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
+void concatenate();
+
+void compare();
+
+void findLength();
+
+void copy();
+
 int main()
 {
 
@@ -44,6 +52,6 @@ int main()
             printf("Invalid input!\n\n\");
         }
         
-    }
+    } while();
     return 0;
 }
