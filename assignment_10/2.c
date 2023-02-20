@@ -49,7 +49,7 @@ int main()
         }
         else
         {
-            printf("Invalid input!\n\n\");
+            printf("Invalid input!\n\n");
         }
         
     } while();
