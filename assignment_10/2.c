@@ -3,9 +3,9 @@
 
 void concatenate();
 
-void compare();
+int compare();
 
-void findLength();
+int findLength();
 
 void copy();
 
@@ -54,4 +54,68 @@ int main()
         
     } while();
     return 0;
+}
+
+void concatenate()
+{
+    int n1, n2;
+    scanf("%d %d", &n1, &n2);
+    
+    char s1[n1+1], s2[n2+1];
+    
+    scanf("%[^\n]s", s1);
+    scanf("%[^\n]s", s2);
+    
+    char s3[n1+n2+1];
+    int j=0;
+    for(int i=0; i<n1+n2; i++)
+    {
+        if(j < n1)
+        {
+            s3[i] = s1[j];
+            j++;
+        }
+        else if(j == n1)
+        {
+            j++;
+        }
+        else if(j > n1)
+        {
+            s3[i] = s2[j];
+        }
+    }
+    s3[n1+n2] = '\0';
+    
+    printf("\n%s\n", s3);
+}
+
+int compare()
+{
+    int n1, n2;
+    scanf("%d %d", &n1, &n2);
+    
+    char s1[n1+1], s2[n2+1];
+    scanf("%[^\n]s", s1);
+    scanf("%[^\n]s", s2);
+    
+    for(int i=0; i <= min(n1, n2), i++)
+    {
+        if(s1[i] - s2[i]) return s1[i] - s2[i];
+    }
+    
+    return 0;
+}
+
+int findLength()
+{
+    int n;
+    scanf("%d", &n);
+    
+    char s[n+1];
+    scanf("%[^\n]s", s);
+    
+    int i=0;
+    while(s[i] != '\0') i++;
+    
+    return i;
 }
