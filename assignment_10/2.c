@@ -49,10 +49,10 @@ int main()
         }
         else
         {
-            printf("Invalid input!\n\n\");
+            printf("Invalid input!\n\n");
         }
         
-    } while();
+    } while(1);
     return 0;
 }
 
@@ -98,7 +98,7 @@ int compare()
     scanf("%[^\n]s", s1);
     scanf("%[^\n]s", s2);
     
-    for(int i=0; i <= min(n1, n2), i++)
+    for(int i=0; i <= n1 && i <= n2; i++)
     {
         if(s1[i] - s2[i]) return s1[i] - s2[i];
     }
@@ -118,4 +118,21 @@ int findLength()
     while(s[i] != '\0') i++;
     
     return i;
+}
+
+void copy()
+{
+    int n;
+    scanf("%d", &n);
+    
+    char s[n+1];
+    scanf("%[^\n]s", s);
+    
+    char c[n+1];
+    for(int i=0; i<=n+1; i++)
+    {
+        c[i] = s[i];
+    }
+    
+    printf("\n%s\n", c);
 }
