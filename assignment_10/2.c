@@ -32,11 +32,11 @@ int main()
         }
         else if(!strcmp(c, "2"))
         {
-            compare();
+            printf("%d\n\n", compare());
         }
         else if(!strcmp(c, "3"))
         {
-            findLength();
+            printf("%d\n\n", findLength());
         }
         else if(!strcmp(c, "4"))
         {
@@ -63,8 +63,8 @@ void concatenate()
     
     char s1[n1+1], s2[n2+1];
     
-    scanf("%[^\n]s", s1);
-    scanf("%[^\n]s", s2);
+    scanf("\n%[^\n]s", s1);
+    scanf("\n%[^\n]s", s2);
     
     char s3[n1+n2+1];
     int j=0;
@@ -75,18 +75,15 @@ void concatenate()
             s3[i] = s1[j];
             j++;
         }
-        else if(j == n1)
+        else if(j >= n1)
         {
+            s3[i] = s2[j-n1];
             j++;
-        }
-        else if(j > n1)
-        {
-            s3[i] = s2[j];
         }
     }
     s3[n1+n2] = '\0';
     
-    printf("\n%s\n", s3);
+    printf("\n%s\n\n", s3);
 }
 
 int compare()
@@ -95,8 +92,8 @@ int compare()
     scanf("%d %d", &n1, &n2);
     
     char s1[n1+1], s2[n2+1];
-    scanf("%[^\n]s", s1);
-    scanf("%[^\n]s", s2);
+    scanf("\n%[^\n]s", s1);
+    scanf("\n%[^\n]s", s2);
     
     for(int i=0; i <= n1 && i <= n2; i++)
     {
@@ -112,7 +109,7 @@ int findLength()
     scanf("%d", &n);
     
     char s[n+1];
-    scanf("%[^\n]s", s);
+    scanf("\n%[^\n]s", s);
     
     int i=0;
     while(s[i] != '\0') i++;
@@ -126,7 +123,7 @@ void copy()
     scanf("%d", &n);
     
     char s[n+1];
-    scanf("%[^\n]s", s);
+    scanf("\n%[^\n]s", s);
     
     char c[n+1];
     for(int i=0; i<=n+1; i++)
@@ -134,5 +131,5 @@ void copy()
         c[i] = s[i];
     }
     
-    printf("\n%s\n", c);
+    printf("\n%s\n\n", c);
 }
