@@ -2,6 +2,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+
+void sort(char **, int);
 
 int main()
 {
@@ -26,4 +30,16 @@ int main()
     }
     free(p);
     p = NULL;
+}
+
+void sort(char **p, int n)
+{
+    for(int i=0; i<n; i++)
+    {
+        int min = 0;
+        for(int j = 0; j < n; j++)
+        {
+            
+        }
+    }
 }
