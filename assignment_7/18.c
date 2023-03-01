@@ -26,9 +26,9 @@ int main()
     int **result = transpose(a, m, n);
     // Printing the transposed matrix
     printf("\nThe transpose of the matrix is:\n");
-    for(int i=0; i<m; i++)
+    for(int i=0; i<n; i++)
     {
-        for(int j=0; j<n; j++)
+        for(int j=0; j<m; j++)
             printf("%d\t", result[i][j]);
         printf("\n");
     }
@@ -41,11 +41,11 @@ int main()
 
 int **transpose(int **a, int m, int n)
 {
-    int **result = (int **) malloc(m*sizeof(int*));
-    for(int i=0; i<m; i++)
+    int **result = (int **) malloc(n*sizeof(int*));
+    for(int i=0; i<n; i++)
     {
-        result[i] = (int *) malloc(n*sizeof(int));
-        for(int j=0; j<n; j++)
+        result[i] = (int *) malloc(m*sizeof(int));
+        for(int j=0; j<m; j++)
         {
             result[i][j] = a[j][i];
         }
@@ -65,3 +65,5 @@ for(int i=0; i<n; i++)
         a[j][i] = temp;
     }
 }
+
+*/
