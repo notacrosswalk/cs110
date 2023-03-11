@@ -105,10 +105,10 @@ void playerMove()
     {
         scanf("%d %d", &r, &c);
 
-        if(board[r-1][c-1] == 0) break;
+        if(r >= 1 && r <= 3 && c >= 1 && c <= 3 && board[r-1][c-1] == 0) break;
         else
         {
-            printf("Sorry, that cell is occupied. Choose an empty cell.\n\n");
+            printf("Sorry, that cell is occupied or it's not a cell available in this game. Choose a valid empty cell.\n\n");
             continue;
         }
     }
